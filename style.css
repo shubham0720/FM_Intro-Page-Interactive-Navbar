@@ -25,3 +25,47 @@ li{
     list-style-type: none;
     padding: 0px 10px 0px 10px;
 }
+
+.homepage-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-section{
+    width: 30vw;
+    height: 80vh;
+    align-items: center;
+}
+
+.header-title-make{
+    font-weight: bold;
+    font-size: 56px;
+    width: 160px;
+    padding-top: 120px;
+}
+.header-title-remote-work{
+    font-weight: bold;
+    font-size: 56px;
+    width: 380px;
+}
+
+p{
+    font-size: 18px;
+    color: hsl(0, 0%, 41%);
+    padding-top: 60px;
+}
+
+button{
+    margin-top: 80px;
+}
+
+.brands-section{
+    padding-top: 120px;
+}
+
+/* Cover image */
+
+.homepage-cover-img img{
+    height: 80vh;
+}
