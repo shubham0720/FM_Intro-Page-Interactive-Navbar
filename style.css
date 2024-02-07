@@ -19,11 +19,23 @@ ul{
     justify-content: space-between;
     align-items: center;
     padding: 10px 25px;
+    color: rgb(3, 3, 3, 0.5);
 }
 
 li{
     list-style-type: none;
     padding: 0px 10px 0px 10px;
+}
+
+li img{
+    display: none;
+}
+
+.login-register ul li:nth-child(2){
+    padding: 10px 14px 10px 14px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
 }
 
 .homepage-content{
@@ -53,11 +65,17 @@ li{
 p{
     font-size: 18px;
     color: hsl(0, 0%, 41%);
-    padding-top: 60px;
+    margin-top: 60px;
+    line-height: 28px;
 }
 
 button{
-    margin-top: 80px;
+    margin-top: 40px;
+    padding: 10px 14px 10px 14px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    background-color: white;
 }
 
 .brands-section{
@@ -66,6 +84,42 @@ button{
 
 /* Cover image */
 
+.homepage-cover-img-mobile img{
+    display: none;
+}
+
 .homepage-cover-img img{
     height: 80vh;
+}
+
+li:hover{
+    color: black;
+    transition: 1s;
+}
+
+@media(max-width:770px){
+
+    .homepage-content{
+        flex-direction: column;
+    }
+
+    .homepage-cover-img img{
+        display: none;
+    }
+
+    .homepage-cover-img-mobile img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    ul{
+        display: none;
+    }
+
+    li img{
+        display: flex;
+        background-color: orange;
+    }
 }
